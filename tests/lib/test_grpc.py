@@ -20,4 +20,5 @@ class TestGRPC(object):
         output, _ = proc.communicate()
         self.exitcode = proc.wait()
         if self.exitcode != 0:
+            print(output)
             raise frrtest.TestExitNonzero(self)
