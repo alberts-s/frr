@@ -44,7 +44,7 @@
  * atomics and C++ has a different atomics API. Enable gRPC debugging
  * unconditionally until we figure out a way to solve this problem.
  */
-static bool nb_dbg_client_grpc = 0;
+static bool nb_dbg_client_grpc = true;
 
 static struct thread_master *main_master;
 
